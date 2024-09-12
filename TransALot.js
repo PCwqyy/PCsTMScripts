@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Transition alot
 // @namespace    http://tampermonkey.net/
-// @version      v1.1
+// @version      v1.1.1
 // @description  make the world transition!
 // @author       PCwqyy
 // @match        http://*/*
