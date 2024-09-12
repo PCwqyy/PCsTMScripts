@@ -15,11 +15,12 @@
 // ==/UserScript==
 
 (function() {
-    var Body514=document.querySelector("body");
-    var Displayer514=document.createElement('div');
-    Displayer514.id="transdisplayer"
-    var Style514=document.createElement('style');
-    Style514.textContent="\
+	var Body514=document.getElementsByTagName("body");
+	while(Body514.length!=0);
+	var Displayer514=document.createElement('div');
+	Displayer514.id="transdisplayer"
+	var Style514=document.createElement('style');
+	Style514.textContent="\
 		@keyframes transss{\
 			0%{opacity: 1;}\
 			100%{opacity: 0;}\
@@ -40,7 +41,7 @@
 		}\
 		*{animation: transsss 1s;}\
 	";
-    Body514.appendChild(Style514);
-    Body514.appendChild(Displayer514);
-    setTimeout(()=>{Displayer514.style.display="none";},950);
+	Body514[0].appendChild(Style514);
+	Body514[0].appendChild(Displayer514);
+	setTimeout(()=>{Displayer514.style.display="none";},950);
 })();

@@ -12,8 +12,9 @@
 // ==/UserScript==
 
 (function() {
-    var Body114=document.querySelector("body");
+    var Body114=document.getElementsByTagName("body");
+	while(Body114.length!=0);
     var Style114=document.createElement('style');
     Style114.textContent="*{transition: 2s;}a{transition: 0.5s;}span{transition: 0s;}";
-    Body114.appendChild(Style114);
+    Body114[0].appendChild(Style114);
 })();
