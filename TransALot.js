@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Transition alot
+// @name         TransALot
 // @namespace    http://tampermonkey.net/
-// @version      v1.1.1
+// @version      v1.1.2
 // @description  make the world transition!
 // @author       PCwqyy
 // @match        http://*/*
@@ -13,8 +13,13 @@
 
 (function() {
     var Body114=document.getElementsByTagName("body");
-	while(Body114.length!=0);
-    var Style114=document.createElement('style');
-    Style114.textContent="*{transition: 2s;}a{transition: 0.5s;}span{transition: 0s;}";
-    Body114[0].appendChild(Style114);
+	var Id=setInterval(()=>{
+		if(Body114.length!=0)
+		{
+			var Style114=document.createElement('style');
+			Style114.textContent="*{transition: 2s;}a{transition: 0.5s;}span{transition: 0s;}";
+			Body114[0].appendChild(Style114);
+			clearInterval(Id);
+		}
+	},10);
 })();
