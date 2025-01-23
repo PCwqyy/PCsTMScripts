@@ -22,27 +22,27 @@
 			var Displayer514=document.createElement('div');
 			Displayer514.id="transdisplayer"
 			var Style514=document.createElement('style');
-			Style514.textContent="\
-				@keyframes transss{\
-					0%{opacity: 1;}\
-					100%{opacity: 0;}\
-				}\
-				@keyframes transsss{\
-					0%{opacity: 0;}\
-					100%{opacity: 1;}\
-				}\
-				#transdisplayer{\
-					width:100vw;\
-					height:100vh;\
-					z-index:1145141919810;\
-					position: fixed;\
-					left: 0px;\
-					top: 0px;\
-					animation: transss 0.9s;\
-					background-color: white;\
-				}\
-				*{animation: transsss 1s;}\
-			";
+			Style514.textContent=`
+				@keyframes transss{
+					0%{opacity: 1;}
+					100%{opacity: 0;}
+				}
+				@keyframes transsss{
+					0%{opacity: 0;}
+					100%{opacity: 1;}
+				}
+				#transdisplayer{
+					width:100vw;
+					height:100vh;
+					z-index:1145141919810;
+					position: fixed;
+					left: 0px;
+					top: 0px;
+					animation: transss 0.9s;
+					background-color: white;
+				}
+				*{animation: transsss 1s;}
+			`;
 			Body514[0].appendChild(Style514);
 			Body514[0].appendChild(Displayer514);
 			setTimeout(()=>{Displayer514.style.display="none";},950);
